@@ -3,1031 +3,883 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Tender Touch - STD 3 UNIT 1</title>
+<title>Festive Fun - STD 3 English Unit 2 | Smart Vidhya</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Anek+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{--primary:#00BCD4;--secondary:#FF4081;--accent:#FFC107;--blue:#03A9F4;--purple:#9C27B0;--teal:#009688;--shadow:0 8px 20px rgba(0,0,0,.15);--radius:20px}
-*{box-sizing:border-box;user-select:none;-webkit-user-select:none;margin:0;padding:0}
-body{background:linear-gradient(180deg,#E1F5FE 0%,#FFF3E0 40%,#fff 70%);min-height:100vh;overflow-x:hidden;color:#263238;font-family:'Quicksand','Segoe UI',sans-serif}
-h1,h2,h3{font-family:'Baloo 2',cursive}
-.ml{font-family:'Anek Malayalam',sans-serif;font-weight:600}
-#app{position:relative;z-index:1;max-width:1050px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding:15px}
-header{background:rgba(255,255,255,.97);padding:12px 20px;border-radius:var(--radius);box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;flex-wrap:wrap;gap:10px}
-.logo-area{display:flex;align-items:center;gap:10px;cursor:pointer}
-.logo-area h1{font-size:1.25rem;color:var(--primary);font-weight:800}
-.logo-area .sub{font-size:.85rem;color:#00838F}
-.logo-area span{font-size:.78rem;background:var(--accent);color:#333;padding:3px 10px;border-radius:12px;font-weight:bold}
-.stats-bar{display:flex;align-items:center;gap:15px;background:#FFF9C4;padding:8px 16px;border-radius:30px;border:2px solid #FBC02D;font-weight:bold;font-size:1.05rem}
-.stat-item{display:flex;align-items:center;gap:5px}
-.controls{display:flex;gap:8px}
-.icon-btn{background:#fff;border:2px solid #E0E0E0;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:1.1rem;cursor:pointer;box-shadow:0 3px 6px rgba(0,0,0,.1)}
-.icon-btn:hover{transform:scale(1.1)}
-.progress-container{width:100%;background:rgba(255,255,255,.6);height:10px;border-radius:10px;overflow:hidden;margin-bottom:15px;box-shadow:inset 0 2px 4px rgba(0,0,0,.1)}
-.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#00BCD4,#4DD0E1);transition:width .4s ease}
-.screen{display:none;flex-direction:column;align-items:center;width:100%;flex:1;animation:fadeIn .3s ease-in-out}
-.screen.active{display:flex}
-@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.home-card{background:rgba(255,255,255,.95);border-radius:25px;padding:30px 20px;text-align:center;box-shadow:var(--shadow);width:100%;max-width:720px;margin:auto;border:4px solid #fff}
-.main-title{color:#0097A7;font-size:1.9rem;margin-bottom:6px}
-.sub-title{color:#E65100;font-size:1.2rem;margin-bottom:8px;font-weight:700}
-.quote-box {background: #FFF9C4; border-left: 5px solid #FFC107; padding: 10px 15px; margin: 15px auto; max-width: 500px; font-style: italic; color: #555; border-radius: 8px;}
-.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;width:100%}
-.btn-menu{padding:16px 18px;border:none;border-radius:20px;font-size:1.02rem;font-weight:bold;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 0 rgba(0,0,0,.2);text-shadow:1px 1px 2px rgba(0,0,0,.3);transition:all .2s;font-family:'Baloo 2',cursive}
-.btn-menu:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.2)}
-.b1{background:linear-gradient(135deg,#00BCD4,#0097A7)}.b2{background:linear-gradient(135deg,#FF4081,#F50057)}
-.b3{background:linear-gradient(135deg,#2196F3,#1E88E5)}.b4{background:linear-gradient(135deg,#9C27B0,#8E24AA)}
-.b5{background:linear-gradient(135deg,#009688,#00897B)}.b6{background:linear-gradient(135deg,#FF9800,#FB8C00)}
-.b7{background:linear-gradient(135deg,#795548,#6D4C41)}.b8{background:linear-gradient(135deg,#607D8B,#546E7A)}
-.b9{background:linear-gradient(135deg,#3F51B5,#3949AB)}.b10{background:linear-gradient(135deg,#EC407A,#D81B60)}
-.b11{background:linear-gradient(135deg,#8D6E63,#6D4C41)}.b12{background:linear-gradient(135deg,#26C6DA,#00ACC1)}
-.b13{background:linear-gradient(135deg,#7CB342,#558B2F)}.b14{background:linear-gradient(135deg,#FFB300,#FF8F00)}
-.b18{background:linear-gradient(135deg,#26A69A,#00897B)}
-.lesson-pick{background:#fff;border:3px solid #80DEEA;border-radius:18px;padding:18px 22px;margin-bottom:14px;cursor:pointer;display:flex;align-items:center;gap:14px;box-shadow:0 4px 12px rgba(0,0,0,.08);transition:all .2s;width:100%;max-width:520px}
-.lesson-pick:hover{border-color:#00BCD4;background:#E0F7FA;transform:translateY(-3px)}
-.lesson-pick .lp-emoji{font-size:2.4rem}
-.lesson-pick .lp-title{font-size:1.2rem;font-weight:800;color:#00838F;font-family:'Baloo 2',cursive}
-.lesson-pick .lp-sub{font-size:.9rem;color:#546E7A}
-.section-header{width:100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;background:#fff;padding:12px 20px;border-radius:15px;box-shadow:var(--shadow);flex-wrap:wrap;gap:10px}
-.section-title{font-size:1.15rem;color:var(--primary);font-weight:800;display:flex;align-items:center;gap:8px;font-family:'Baloo 2',cursive}
-.back-btn{background:linear-gradient(135deg,#607D8B,#546E7A);color:#fff;border:none;padding:8px 20px;border-radius:20px;font-weight:bold;cursor:pointer}
-.content-box{background:rgba(255,255,255,.97);border-radius:22px;padding:24px;box-shadow:var(--shadow);width:100%;max-width:850px;margin:0 auto 20px;border:3px solid #fff}
-.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px;width:100%;padding-bottom:20px}
-.word-card{background:#fff;border-radius:20px;padding:14px;text-align:center;box-shadow:var(--shadow);border:3px solid #fff;transition:all .3s;cursor:pointer;display:flex;flex-direction:column;align-items:center}
-.word-card:hover{transform:translateY(-6px);border-color:var(--accent)}
-.word-card.playing{animation:pulseCard .6s infinite alternate;border-color:var(--primary);background:#E0F7FA}
-@keyframes pulseCard{from{transform:scale(1)}to{transform:scale(1.05)}}
-.card-emoji{font-size:3.4rem;margin-bottom:8px}
-.word-eng{font-size:1.35rem;margin-bottom:6px;font-weight:800;color:#00838F;font-family:'Baloo 2',cursive}
-.word-meaning{font-size:.9rem;color:#555;margin-bottom:8px}
-.replay-btn{background:#E0F7FA;color:#00838F;border:none;padding:5px 12px;border-radius:15px;font-size:.85rem;font-weight:bold;cursor:pointer}
-.story-title-wrap{text-align:center;width:100%;margin-bottom:18px}
-.story-title{text-align:center;font-size:1.5rem;margin-bottom:16px;background:linear-gradient(90deg,#80DEEA,#4DD0E1);display:inline-block;padding:8px 30px;border-radius:30px;color:#006064!important;font-family:'Baloo 2',cursive}
-.story-para{background:#E1F5FE;border-left:5px solid var(--primary);padding:14px 18px;border-radius:14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.story-para p{font-size:1.15rem;line-height:1.9;flex:1;min-width:250px}
-.mini-play{background:var(--primary);color:#fff;border:none;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.1rem;flex-shrink:0}
-.read-all-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:12px 30px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;margin-bottom:18px;box-shadow:0 4px 10px rgba(0,188,212,.4);font-family:'Baloo 2',cursive}
-.activity-block{background:#FFF8E1;border:2px solid #FFE082;border-radius:18px;padding:20px;margin-bottom:22px;width:100%}
-.activity-heading{color:#E65100;font-size:1.15rem;margin-bottom:14px;font-weight:800;font-family:'Baloo 2',cursive}
-.activity-sub{font-size:.95rem;color:#455A64;margin-bottom:10px}
-.fillbox{border:2px solid #90A4AE;border-radius:10px;padding:6px 10px;font-size:1rem;font-family:'Quicksand',sans-serif;font-weight:700;color:#00838F;min-width:110px;text-align:center;background:#fff}
-select.fillbox{cursor:pointer}
-.check-btn{background:var(--primary);color:#fff;border:none;padding:8px 22px;border-radius:20px;font-weight:bold;cursor:pointer;margin-top:8px;font-family:'Baloo 2',cursive}
-.result-msg{font-weight:bold;margin-top:8px;font-size:1.02rem}
-.model-answer-box{background:#F3E5F5;border:2px solid #CE93D8;border-radius:14px;padding:14px 18px;margin-top:10px;font-size:1.05rem;line-height:1.9;display:none}
-.reveal-model-btn{background:var(--purple);color:#fff;border:none;padding:8px 20px;border-radius:18px;font-size:.9rem;cursor:pointer;margin-top:6px;font-family:'Baloo 2',cursive;font-weight:bold}
-.write-box{width:100%;min-height:80px;border:2px dashed #90A4AE;border-radius:12px;padding:10px 14px;font-size:1rem;font-family:'Quicksand',sans-serif;margin-bottom:10px;resize:vertical}
-.game-box{background:rgba(255,255,255,.95);border-radius:25px;padding:25px;box-shadow:var(--shadow);width:100%;max-width:750px;margin:0 auto;display:flex;flex-direction:column;align-items:center;border:4px solid #fff}
-.game-instruction{font-size:1.05rem;color:#37474F;margin-bottom:20px;text-align:center;background:#E1F5FE;padding:8px 20px;border-radius:20px;font-weight:bold;font-family:'Baloo 2',cursive}
-.g1-image-box{width:170px;height:170px;background:#F5F5F5;border-radius:20px;display:flex;justify-content:center;align-items:center;margin-bottom:22px;border:3px solid #E0E0E0;padding:10px;font-size:5rem}
-.options-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;width:100%;max-width:480px}
-.meaning-box{font-size:1.4rem;font-weight:800;color:#00838F;background:#E1F5FE;padding:16px 30px;border-radius:20px;margin-bottom:22px;border:2px dashed #00BCD4;text-align:center}
-.listen-btn-big{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;width:96px;height:96px;border-radius:50%;font-size:2.6rem;cursor:pointer;margin-bottom:22px;box-shadow:0 6px 0 #006064}
-.listen-btn-big:active{transform:translateY(4px);box-shadow:0 2px 0 #006064}
-.option-btn{background:#fff;border:3px solid #80DEEA;padding:14px;border-radius:18px;font-size:1.3rem;font-weight:bold;color:#00838F!important;cursor:pointer;box-shadow:0 4px 0 #4DD0E1;font-family:'Baloo 2',cursive}
-.option-btn:hover{background:#E1F5FE}
-.option-btn.correct{background:#C8E6C9!important;border-color:#4CAF50!important;color:#2E7D32!important;box-shadow:0 4px 0 #388E3C!important}
-.option-btn.wrong{background:#FFCDD2!important;border-color:#F44336!important;color:#C62828!important;box-shadow:0 4px 0 #D32F2F!important}
-.match-container{display:flex;justify-content:space-between;width:100%;gap:18px;margin-bottom:18px}
-.match-column{display:flex;flex-direction:column;gap:14px;flex:1}
-.match-item{background:#fff;border:3px solid #CFD8DC;border-radius:15px;padding:10px;display:flex;align-items:center;justify-content:center;min-height:78px;cursor:pointer}
-.match-item:hover{border-color:var(--primary);background:#E1F5FE}
-.match-item.selected{border-color:var(--accent);background:#FFF8E1}
-.match-item.matched{border-color:#4CAF50;background:#E8F5E9;opacity:.6;pointer-events:none}
-.match-item.wrong{border-color:#F44336!important;background:#FFCDD2!important}
-.match-item .text-thumb{font-size:1.15rem;font-weight:bold;font-family:'Baloo 2',cursive;text-align:center}
-.seq-item{background:#fff;border:2px solid #CFD8DC;border-radius:12px;padding:10px 14px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;gap:10px}
-.seq-item.selected{border-color:var(--accent);background:#FFF8E1}
-.seq-item.correct{border-color:#4CAF50;background:#E8F5E9}
-.seq-num{background:var(--primary);color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold}
-.quiz-q{background:#fff;border-radius:16px;padding:16px 20px;margin-bottom:16px;box-shadow:0 3px 10px rgba(0,0,0,.08);border-left:5px solid var(--primary)}
-.quiz-q .qtext{font-size:1.1rem;margin-bottom:12px;font-weight:bold}
-.quiz-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.quiz-opt{background:#F5F5F5;border:2px solid #E0E0E0;border-radius:12px;padding:10px;cursor:pointer;text-align:center;font-size:1rem}
-.quiz-opt.picked{border-color:var(--primary);background:#E1F5FE}
-.quiz-opt.correct-ans{border-color:#4CAF50;background:#C8E6C9}
-.quiz-opt.wrong-ans{border-color:#F44336;background:#FFCDD2}
-.submit-quiz-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:14px 40px;border-radius:25px;font-size:1.1rem;font-weight:bold;cursor:pointer;margin-top:10px;box-shadow:0 4px 10px rgba(0,188,212,.4);font-family:'Baloo 2',cursive}
-.quiz-score-box{background:#FFF9C4;border:2px solid #FBC02D;border-radius:18px;padding:18px;text-align:center;font-size:1.2rem;font-weight:bold;margin-bottom:18px}
-table.vocab-table{width:100%;border-collapse:collapse}
-.vocab-table th{background:var(--primary);color:#fff;padding:10px;font-size:.95rem;font-family:'Baloo 2',cursive}
-.vocab-table td{padding:10px;border-bottom:1px solid #eee;font-size:1.05rem;text-align:center}
-.vocab-table tr:nth-child(even){background:#FAFAFA}
-.vocab-emoji{font-size:1.6rem}
-.modal-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,.7);z-index:100;display:none;justify-content:center;align-items:center;padding:20px}
-.modal-overlay.active{display:flex}
-.reward-card{background:#fff;border-radius:30px;padding:30px;text-align:center;max-width:480px;width:100%;box-shadow:0 20px 40px rgba(0,0,0,.3);border:5px solid #FFD54F}
-.reward-icon{font-size:3.6rem;margin-bottom:10px}
-.reward-title{color:#00838F;font-size:1.9rem;margin-bottom:8px}
-.reward-subtitle{color:#E65100;font-size:1.1rem;margin-bottom:18px}
-.primary-action-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:12px 28px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;font-family:'Baloo 2',cursive}
-.instructions-list{text-align:left;line-height:1.9;font-size:1rem;background:#F5F5F5;padding:20px;border-radius:15px;width:100%}
-.instructions-list li{margin-bottom:8px}
-.qa-line{background:#E1F5FE;border-radius:12px;padding:10px 16px;margin-bottom:10px}
-.qa-line .q{font-weight:bold;color:#006064!important}
-.qa-line .a{display:none;color:#BF360C!important;margin-top:6px}
-.qa-line .a.show{display:block}
-.reveal-btn{background:var(--purple);color:#fff;border:none;padding:6px 16px;border-radius:14px;font-size:.85rem;cursor:pointer;margin-top:6px;font-family:'Baloo 2',cursive}
-.qp-section{background:#E1F5FE;border:2px solid #80DEEA;border-radius:16px;padding:18px;margin-bottom:18px}
-.qp-heading{color:#00838F;font-size:1.1rem;font-weight:800;margin-bottom:12px;border-bottom:2px dashed #80DEEA;padding-bottom:6px;font-family:'Baloo 2',cursive}
-.qp-q{background:#fff;border-radius:12px;padding:12px 16px;margin-bottom:12px;border-left:4px solid var(--primary);font-size:1.02rem;line-height:1.7}
-.qp-q .qnum{font-weight:bold;color:var(--primary)}
-.unit-qp-paper{background:#fff;border:2px solid #333;border-radius:8px;padding:28px 32px;font-family:'Times New Roman',Times,serif;color:#111;line-height:1.6}
-.unit-qp-paper .qp-school{text-align:center;font-size:1.05rem;font-weight:bold;margin-bottom:4px}
-.unit-qp-paper .qp-title{text-align:center;font-size:1.35rem;font-weight:bold;margin:8px 0 4px;text-decoration:underline}
-.unit-qp-paper .qp-meta{display:flex;justify-content:space-between;flex-wrap:wrap;font-size:.95rem;margin:12px 0 18px;border-bottom:2px solid #333;padding-bottom:10px}
-.unit-qp-paper .qp-act{margin-bottom:22px}
-.unit-qp-paper .qp-act-h{font-weight:bold;font-size:1.05rem;margin-bottom:8px;border-left:4px solid #00838F;padding-left:10px}
-.unit-qp-paper .qp-act p,.unit-qp-paper .qp-act li{font-size:1rem;margin-bottom:6px}
-.unit-qp-paper .qp-lines{border-bottom:1px dotted #999;height:22px;margin:4px 0}
-.unit-qp-paper .qp-footer{text-align:center;margin-top:24px;font-size:.9rem;border-top:1px solid #999;padding-top:10px}
-@media print{
-header,.progress-container,.section-header,.controls,.btn-menu,.home-card .menu-grid,.listen-btn-big,.reveal-model-btn,.reveal-btn,.check-btn,.submit-quiz-btn,.replay-btn,.mini-play,.read-all-btn,.no-print{display:none!important}
-body{background:#fff!important}
-.content-box{box-shadow:none;border:none;max-width:100%!important;padding:0!important}
-.model-answer-box{display:block!important}
-.unit-qp-paper{border:none;padding:0;box-shadow:none}
-#unitQPScreen.screen{display:flex!important}
-#unitQPScreen .section-header{display:none!important}
+:root {
+  --primary: #E11D48;
+  --secondary: #0D9488;
+  --accent: #F59E0B;
+  --blue: #0288D1;
+  --purple: #8E24AA;
+  --teal: #00897B;
+  --shadow: 0 8px 20px rgba(0,0,0,0.12);
+  --radius: 20px;
 }
-@media (max-width:600px){.main-title{font-size:1.4rem}.sub-title{font-size:1rem}.options-grid{grid-template-columns:1fr}.match-container{flex-direction:column}.quiz-opts{grid-template-columns:1fr}.story-para p{font-size:1rem}}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #FFE4E6 0%, #FEF3C7 50%, #FFFFFF 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #1E293B;
+  font-family: 'Nunito', sans-serif;
+  direction: ltr;
+  text-align: left;
+}
+
+.ml {
+  font-family: 'Anek Malayalam', sans-serif !important;
+  font-weight: 600;
+}
+
+.en {
+  font-family: 'Nunito', sans-serif;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 3px solid #F1F5F9;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-area h1 {
+  font-size: 1.35rem;
+  color: var(--primary);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.logo-area .sub {
+  font-size: 0.88rem;
+  color: #0288D1;
+  font-weight: 700;
+}
+
+.logo-area span.badge {
+  font-size: 0.78rem;
+  background: var(--accent);
+  color: #1E293B;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+.stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #FEF08A;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 2px solid #FACC15;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #854D0E;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: #FFF;
+  border: 2px solid #CBD5E1;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--primary);
+}
+
+.progress-container {
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #CBD5E1;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #E11D48, #F59E0B);
+  transition: width .4s ease;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  animation: fadeIn .3s ease-in-out;
+}
+
+.screen.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 25px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  border: 4px solid #FFF;
+}
+
+.main-title {
+  color: #BE123C;
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.sub-title {
+  color: #D97706;
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.author-tag {
+  background: #FFE4E6;
+  color: #BE123C;
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+  font-weight: 800;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.btn-menu {
+  padding: 16px 18px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 12px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.18);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transition: all .15s;
+  text-align: left;
+}
+
+.btn-menu:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.18);
+}
+
+.b1 { background: linear-gradient(135deg, #E11D48, #BE123C); }
+.b2 { background: linear-gradient(135deg, #0D9488, #0F766E); }
+.b3 { background: linear-gradient(135deg, #0288D1, #0369A1); }
+.b4 { background: linear-gradient(135deg, #9333EA, #7E22CE); }
+.b5 { background: linear-gradient(135deg, #16A34A, #15803D); }
+.b6 { background: linear-gradient(135deg, #D97706, #B45309); }
+.b7 { background: linear-gradient(135deg, #854D0E, #713F12); }
+.b8 { background: linear-gradient(135deg, #475569, #334155); }
+.b9 { background: linear-gradient(135deg, #4F46E5, #4338CA); }
+.b10{ background: linear-gradient(135deg, #DB2777, #BE185D); }
+
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #64748B, #475569);
+  color: white;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #334155;
+}
+
+.content-box {
+  background: rgba(255,255,255,0.98);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto 20px;
+  border: 3px solid #fff;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.word-card {
+  background: white;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 3px solid #E2E8F0;
+  transition: all .3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.card-emoji { font-size: 3.5rem; margin-bottom: 8px; }
+.word-english { font-size: 1.4rem; font-weight: 800; color: #E11D48; margin-bottom: 4px; }
+.word-meaning { font-size: 0.95rem; color: #475569; margin-bottom: 10px; }
+
+.story-para {
+  background: #FFF1F2;
+  border-left: 5px solid var(--primary);
+  padding: 16px 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.story-para h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #BE123C;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.story-para p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  flex: 1;
+  min-width: 250px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.mini-play {
+  background: var(--blue);
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 0 #0369A1;
+}
+
+.game-box {
+  background: rgba(255,255,255,0.98);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #FFF;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.option-btn {
+  background: #FFF;
+  border: 3px solid #FDA4AF;
+  padding: 14px;
+  border-radius: 18px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #BE123C !important;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #FB7185;
+}
+
+.option-btn.correct { background: #DCFCE7 !important; border-color: #22C55E !important; color: #15803D !important; }
+.option-btn.wrong { background: #FEE2E2 !important; border-color: #EF4444 !important; color: #B91C1C !important; }
+
+.qp-section {
+  background: #FFF1F2;
+  border: 2px solid #FECDD3;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.qp-heading {
+  color: #BE123C;
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  border-bottom: 2px dashed #FDA4AF;
+  padding-bottom: 6px;
+}
+
+.qp-q {
+  background: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.print-btn {
+  background: linear-gradient(135deg, #16A34A, #15803D);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #166534;
+}
+
+.model-answer-box {
+  background: #F3E8FF;
+  border: 2px solid #D8B4FE;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-top: 10px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  display: none;
+}
+
+.reveal-model-btn {
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 800;
+}
+
+@media print {
+  body * { visibility: hidden !important; }
+  #modelQPScreen, #modelQPScreen * { visibility: visible !important; }
+  #modelQPScreen {
+    position: absolute !important;
+    left: 0 !important; top: 0 !important;
+    width: 100% !important;
+    background: white !important;
+    padding: 10px !important;
+  }
+  .section-header, .back-btn, .print-btn, .reveal-model-btn, header, .progress-container {
+    display: none !important;
+  }
+}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 <div id="app">
-<header>
-<div class="logo-area" onclick="showScreen('homeScreen')"><div style="font-size:1.8rem">💖</div><div><h1>Tender Touch</h1><span>STD 3 · UNIT 1</span><div class="sub ml">മൂന്നാം ക്ലാസ് • യൂണിറ്റ് 1</div></div></div>
-<div class="stats-bar"><div class="stat-item">⭐ <span id="valScore">0</span></div><div class="stat-item">❤️ <span id="valLives">5</span></div><div class="stat-item">🏆 <span id="valStars">0</span></div></div>
-<div class="controls">
-<button class="icon-btn" id="btnAudioToggle" onclick="toggleAudio()" title="Sound">🔊</button>
-<button class="icon-btn" onclick="printPage()" title="Print">🖨️</button>
-<button class="icon-btn" onclick="downloadPage()" title="Download">⬇️</button>
-<button class="icon-btn" onclick="toggleFullscreen()" title="Full Screen">⛶</button>
-<button class="icon-btn" onclick="showScreen('homeScreen')" title="Home">🏠</button>
-</div>
-</header>
-<div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+    <header>
+        <div class="logo-area" onclick="showScreen('homeScreen')">
+            <div style="font-size:2rem;">🎉</div>
+            <div>
+                <h1 class="en">FESTIVE FUN</h1>
+                <span class="badge en">STD 3 · UNIT 2</span>
+                <div class="sub ml">മൂന്നാം ക്ലാസ് • ഇംഗ്ലീഷ് • യൂണിറ്റ് 2</div>
+            </div>
+        </div>
+        <div class="stats-bar">
+            <div>⭐ <span id="valScore">0</span></div>
+            <div>❤️ <span id="valLives">3</span></div>
+            <div>🏆 <span id="valStars">0</span></div>
+        </div>
+        <div class="controls">
+            <button class="icon-btn" id="btnAudioToggle" onclick="toggleAudio()" title="Audio Toggle">🔊</button>
+            <button class="icon-btn" onclick="toggleFullscreen()" title="Fullscreen">⛶</button>
+            <button class="icon-btn" onclick="showScreen('homeScreen')" title="Home">🏠</button>
+        </div>
+    </header>
 
-<!-- HOME -->
-<div id="homeScreen" class="screen active">
-<div class="home-card">
-<h1 class="main-title">🎉 Tender Touch</h1>
-<h2 class="sub-title">UNIT 1 : TENDER TOUCH</h2>
-<div class="quote-box ml">"Give your hands to serve, and your hearts to love." - Mother Teresa</div>
-<div class="menu-grid">
-<button class="btn-menu b1" onclick="openChoose('read')">📖 Read the Lessons</button>
-<button class="btn-menu b2" onclick="openChoose('learn')">🗂️ Learn Words</button>
-<button class="btn-menu b6" onclick="openChoose('activities')">📝 Activities</button>
-<button class="btn-menu b3" onclick="openChoose('games')">🎮 Games</button>
-<button class="btn-menu b4" onclick="openChoose('quiz')">❓ Quiz</button>
-<button class="btn-menu b10" onclick="showScreen('modelQPScreen')">📋 Model Question Paper</button>
-<button class="btn-menu b18" onclick="showScreen('unitQPScreen')">📄 Unit Question Paper</button>
-<button class="btn-menu b7" onclick="openChoose('vocab')">📚 Vocabulary</button>
-<button class="btn-menu b9" onclick="openChoose('recast')">📔 Recast Story</button>
-<button class="btn-menu b12" onclick="openChoose('kitchen')">🍽️ Kitchen Items</button>
-<button class="btn-menu b13" onclick="openChoose('poem_complete')">✍️ Complete Poem</button>
-<button class="btn-menu b11" onclick="openChoose('rhyming')">🔤 Rhyming Words</button>
-<button class="btn-menu b8" onclick="showScreen('instructionsScreen')">ℹ️ Instructions</button>
-</div>
-</div>
-</div>
+    <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
 
-<!-- CHOOSE LESSON -->
-<div id="chooseScreen" class="screen">
-<div class="section-header"><div class="section-title" id="chooseTitle">Choose a Lesson</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div>
-<div class="content-box"><div class="choose-wrap" id="chooseList"></div></div>
-</div>
+    <div id="homeScreen" class="screen active">
+        <div class="home-card">
+            <h1 class="main-title en">FESTIVE FUN</h1>
+            <h2 class="sub-title en">STD 3 ENGLISH - UNIT 2</h2>
+            <div class="author-tag ml">Prepared by Smart Vidhya</div>
 
-<!-- CONTENT -->
-<div id="contentScreen" class="screen">
-<div class="section-header"><div class="section-title" id="contentTitle">Content</div><button class="back-btn" id="contentBackBtn" onclick="goBackFromContent()">Back</button></div>
-<div class="content-box" id="contentBody"></div>
-</div>
+            <div class="menu-grid">
+                <button class="btn-menu b1" onclick="showScreen('readingScreen')">📖 Read the Story</button>
+                <button class="btn-menu b2" onclick="showScreen('learnScreen')">🗂️ Learn Words</button>
+                <button class="btn-menu b6" onclick="showScreen('activitiesScreen')">📝 Activities</button>
+                <button class="btn-menu b3" onclick="showScreen('gamesMenuScreen')">🎮 Games</button>
+                <button class="btn-menu b4" onclick="showScreen('quizScreen')">❓ Quiz (12)</button>
+                <button class="btn-menu b10" onclick="showScreen('modelQPScreen')">📋 Model Question Paper</button>
+                <button class="btn-menu b7" onclick="showScreen('vocabScreen')">📚 Vocabulary</button>
+                <button class="btn-menu b9" onclick="showScreen('poemScreen')">🎵 Poems & Songs</button>
+                <button class="btn-menu b5" onclick="showScreen('rejoiceScreen')">🐛 Read & Rejoice</button>
+                <button class="btn-menu b8" onclick="showScreen('instructionsScreen')">ℹ️ Instructions</button>
+            </div>
+        </div>
+    </div>
 
-<!-- GAMES MENU -->
-<div id="gamesMenuScreen" class="screen">
-<div class="section-header"><div class="section-title" id="gamesMenuTitle">🎮 Games</div><button class="back-btn" onclick="openChoose('games')">Back</button></div>
-<div class="menu-grid" style="max-width:720px;margin:10px auto" id="gamesButtons"></div>
-</div>
+    <div id="readingScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">📖 Read the Story: Festive Fun</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="content-box">
+            <div style="text-align:center; margin-bottom:18px;">
+                <button class="print-btn" style="background:#E11D48;" onclick="readAllStory()">🔊 Read Full Story / Stop Audio</button>
+            </div>
+            <div id="storyContainer"></div>
+        </div>
+    </div>
 
-<!-- GAMES SCREENS -->
-<div id="game1Screen" class="screen"><div class="game-box"><div class="game-instruction">🎮 Guess the correct word!</div><div class="g1-image-box" id="g1ImgBox"></div><div class="options-grid" id="g1OptionsGrid"></div></div></div>
-<div id="game2Screen" class="screen"><div class="game-box"><div class="game-instruction">🔗 Match word with meaning!</div><div class="match-container"><div class="match-column" id="g2PicsCol"></div><div class="match-column" id="g2WordsCol"></div></div></div></div>
-<div id="game7Screen" class="screen"><div class="game-box"><div class="game-instruction">📋 Arrange events in order!</div><div id="g7SeqList" style="width:100%"></div><button class="check-btn" onclick="checkSequence()">✅ Check Order</button><div class="result-msg" id="g7Result"></div></div></div>
-<div id="game8Screen" class="screen"><div class="game-box"><div class="game-instruction">🎭 Who said it?</div><div class="meaning-box" id="g8QuoteBox" style="font-size:1.15rem"></div><div class="options-grid" id="g8OptionsGrid"></div></div></div>
-<div id="game10Screen" class="screen"><div class="game-box"><div class="game-instruction">📝 Complete the sentence!</div><div class="meaning-box" id="g10SentBox" style="font-size:1.15rem"></div><div class="options-grid" id="g10OptionsGrid"></div></div></div>
+    <div id="learnScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">🗂️ Learn Words (പഠിക്കാം വാക്കുകൾ)</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="content-box"><div class="cards-grid" id="learnCardsGrid"></div></div>
+    </div>
 
-<div id="modelQPScreen" class="screen"><div class="section-header"><div class="section-title">📋 Model Question Paper</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div><div class="content-box" id="modelQPContainer"></div></div>
-<div id="unitQPScreen" class="screen">
-<div class="section-header">
-<div class="section-title">📄 Unit Question Paper</div>
-<button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
-</div>
-<div class="content-box" style="max-width:900px">
-<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:18px" class="no-print">
-<button class="btn-menu b1" style="padding:10px 22px;box-shadow:0 4px 0 rgba(0,0,0,.2)" onclick="printUnitQP()">🖨️ Print Question Paper</button>
-<button class="btn-menu b3" style="padding:10px 22px;box-shadow:0 4px 0 rgba(0,0,0,.2)" onclick="downloadUnitQPasPDF()">⬇️ Download as PDF</button>
-</div>
-<div id="unitQPPaper" class="unit-qp-paper"></div>
-</div>
-</div>
-<div id="instructionsScreen" class="screen">
-<div class="section-header"><div class="section-title">ℹ️ Instructions</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div>
-<div class="content-box"><div class="instructions-list ml"><ul>
-<li>Choose a category from the Home screen.</li>
-<li>Select one of the stories or poems to proceed.</li>
-<li><b>Stories:</b> "Tender Touch" and "The Boy and the Bird".</li>
-<li><b>Poems:</b> "Let's be Friends".</li>
-<li>Explore Activities, Games, and Quizzes related to each part.</li>
-<li>Use the 'Model Question Paper' and 'Unit Question Paper' for practice.</li>
-</ul></div></div>
-</div>
-</div>
+    <div id="activitiesScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">📝 Textbook Activities</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="content-box" id="activitiesContainer"></div>
+    </div>
 
-<div class="modal-overlay" id="rewardModal"><div class="reward-card"><div class="reward-icon">🏅</div><h2 class="reward-title">Excellent!</h2><p class="reward-subtitle">You completed this activity!</p><button class="primary-action-btn" onclick="closeRewardModal()">Continue</button></div></div>
+    <div id="gamesMenuScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">🎮 Choose a Game</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="menu-grid" style="max-width:680px; margin:10px auto;">
+            <button class="btn-menu b1" onclick="launchGame(1)">🖼️ Picture Detective</button>
+            <button class="btn-menu b2" onclick="launchGame(2)">🧠 Memory Match</button>
+            <button class="btn-menu b3" onclick="launchGame(3)">🔍 Letter Hunter</button>
+            <button class="btn-menu b4" onclick="launchGame(4)">🧩 Word Builder</button>
+            <button class="btn-menu b5" onclick="launchGame(5)">🎧 Listening Star</button>
+            <button class="btn-menu b9" onclick="launchGame(6)">🌟 Meaning Master</button>
+        </div>
+    </div>
+
+    <div id="game1Screen" class="screen"><div class="game-box"><div id="g1ImgBox" style="font-size:5rem; margin-bottom:15px;"></div><div class="options-grid" id="g1OptionsGrid"></div></div></div>
+    <div id="game2Screen" class="screen"><div class="game-box"><div style="display:flex; gap:20px; width:100%;" id="g2Container"></div></div></div>
+    <div id="game3Screen" class="screen"><div class="game-box"><div id="g3ImgBox" style="font-size:4.5rem;"></div><div id="g3WordDisplay" style="font-size:2rem; font-weight:900; color:#D97706; margin:15px 0;"></div><div class="options-grid" id="g3LettersGrid"></div></div></div>
+    <div id="game4Screen" class="screen"><div class="game-box"><div id="g4ImgBox" style="font-size:4.5rem;"></div><div id="g4Slots" style="display:flex; gap:8px; margin:15px 0;"></div><div id="g4Tiles" style="display:flex; gap:8px; flex-wrap:wrap;"></div></div></div>
+    <div id="game5Screen" class="screen"><div class="game-box"><button class="icon-btn" style="width:80px; height:80px; font-size:2.5rem; margin-bottom:20px;" id="g5ReplayBtn">🔊</button><div class="options-grid" id="g5OptionsGrid"></div></div></div>
+    <div id="game6Screen" class="screen"><div class="game-box"><div id="g6MeaningBox" class="ml" style="font-size:1.5rem; font-weight:800; background:#FFE4E6; padding:15px 25px; border-radius:15px; margin-bottom:20px;"></div><div class="options-grid" id="g6OptionsGrid"></div></div></div>
+
+    <div id="quizScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">❓ Quiz (STD 3 Unit 2)</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="content-box">
+            <div id="quizScoreBox" style="display:none; text-align:center; font-weight:900; font-size:1.2rem; background:#FEF08A; padding:15px; border-radius:15px; margin-bottom:15px;"></div>
+            <div id="quizContainer"></div>
+            <div style="text-align:center; margin-top:15px;"><button class="print-btn" onclick="submitQuiz()">✅ Submit Answers</button></div>
+        </div>
+    </div>
+
+    <div id="modelQPScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">📋 Model Question Paper</div>
+            <div>
+                <button class="print-btn" onclick="triggerPrint()">🖨️ Print / Download PDF</button>
+                <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+            </div>
+        </div>
+        <div class="content-box" id="modelQPContainer"></div>
+    </div>
+
+    <div id="vocabScreen" class="screen">
+        <div class="section-header">
+            <div class="section-title">📚 Vocabulary List</div>
+            <button class="back-btn" onclick="showScreen('homeScreen')">Back</button>
+        </div>
+        <div class="content-box"><div id="vocabList"></div></div>
+    </div>
+
+    <div id="poemScreen" class="screen">
+        <div class="section-header"><div class="section-title">🎵 Unit 2 Poems & Songs</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div>
+        <div class="content-box" id="poemContainer"></div>
+    </div>
+
+    <div id="rejoiceScreen" class="screen">
+        <div class="section-header"><div class="section-title">🐛 Read & Rejoice: The Hungry Caterpillar</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div>
+        <div class="content-box" id="rejoiceContainer"></div>
+    </div>
+
+    <div id="instructionsScreen" class="screen">
+        <div class="section-header"><div class="section-title">ℹ️ Instructions</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div>
+        <div class="content-box ml" style="line-height:2.2; font-size:1.05rem;">
+            <ul>
+                <li>📖 <b>Read the Story:</b> കടൽക്കൊട്ടാരത്തിലെ ആഘോഷങ്ങളും പ്ലാസ്റ്റിക് മലിനീകരണത്തിന് എതിരെയുള്ള പോരാട്ടവും 🔊 ബട്ടൺ അമർത്തി വ്യക്തമായ ഇംഗ്ലീഷ് ഉച്ചാരണത്തോടെ കേൾക്കാം.</li>
+                <li>🗂️ <b>Learn Words:</b> വാക്കുകളും അവയുടെ ഇംഗ്ലീഷ്/മലയാളം അർത്ഥവും ചിഹ്നങ്ങളും കേട്ട് പഠിക്കാം.</li>
+                <li>🎵 <b>Poems:</b> "Water", "Happy Birthday", "Water is Here" എന്നീ കവിതകൾ പൂർണ്ണമായും കേൾക്കാൻ അമർത്തുക.</li>
+                <li>🐛 <b>Read & Rejoice:</b> "The Hungry Caterpillar" എന്ന രസകരമായ കഥ വായിക്കാം, കേൾക്കാം.</li>
+                <li>📝 <b>Activities:</b> പാഠപുസ്തകത്തിലെ എല്ലാ ആക്ടിവിറ്റികളും മാതൃകാ ഉത്തരങ്ങളും നൽകിയിട്ടുണ്ട്.</li>
+                <li>🎮 <b>Games:</b> മൂന്നാം ക്ലാസ് വിദ്യാർത്ഥികൾക്ക് പഠനം എളുപ്പമാക്കുന്ന 6 ഗെയിമുകൾ.</li>
+                <li>📋 <b>Model Question Paper:</b> 30 മാർക്കിന്റെ ചോദ്യപേപ്പർ ആപ്പിൽ നിന്ന് നേരിട്ട് പ്രിന്റ് എടുക്കാം.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <script>
-let state={score:0,lives:5,stars:0,audioEnabled:true,activeGame:null,currentGameIndex:0,gameQueue:[],quizSubmitted:false,currentSection:null,currentLesson:null,lastChooseSection:null,visited:{}};
+let state = { score: 0, lives: 3, stars: 0, audioEnabled: true, activeGame: null, currentGameIndex: 0, gameQueue: [], quizSubmitted: false };
 
-const LESSONS=[
-{id:'tender_touch',emoji:'👧',title:'Tender Touch',sub:'A story of kindness'},
-{id:'boy_and_bird',emoji:'🐦',title:'The Boy and the Bird',sub:'A story of Rinku'},
-{id:'lets_be_friends',emoji:'🤝',title:'Let\'s be Friends',sub:'Poem about sharing'}
+function speakEnglish(text, onend) {
+  if (!state.audioEnabled) return;
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 0.85; // Clear natural speed for Class 3 learners
+    u.pitch = 1.0;
+    if (onend) u.onend = onend;
+    window.speechSynthesis.speak(u);
+  }
+}
+
+function toggleAudio() {
+  state.audioEnabled = !state.audioEnabled;
+  document.getElementById('btnAudioToggle').innerText = state.audioEnabled ? '🔊' : '🔇';
+  if (!state.audioEnabled && 'speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {});
+  else if (document.exitFullscreen) document.exitFullscreen();
+}
+
+function updateStatsUI() {
+  document.getElementById('valScore').innerText = state.score;
+  document.getElementById('valLives').innerText = state.lives;
+  document.getElementById('valStars').innerText = state.stars;
+  document.getElementById('progressBar').style.width = Math.min(100, state.score / 2) + '%';
+}
+
+function revealModel(id, btn) {
+  const el = document.getElementById(id);
+  const showing = el.style.display === 'block';
+  el.style.display = showing ? 'none' : 'block';
+  if (btn) btn.innerText = showing ? '💡 Show Answer / Model' : '🙈 Hide Answer';
+}
+
+function triggerPrint() { window.print(); }
+
+const VOCABULARY = [
+  { id: 'goldfish', word: 'goldfish', meaning: 'സ്വർണ്ണമത്സ്യം', emoji: '🐠', missingLetter: 'o', missingDisplay: 'g _ l d f i s h', letters: ['g','o','l','d','f','i','s','h'] },
+  { id: 'mermaid', word: 'mermaid', meaning: 'മത്സ്യകന്യക', emoji: '🧜‍♀️', missingLetter: 'e', missingDisplay: 'm _ r m a i d', letters: ['m','e','r','m','a','i','d'] },
+  { id: 'starfish', word: 'starfish', meaning: 'നക്ഷത്രമത്സ്യം', emoji: '⭐', missingLetter: 'a', missingDisplay: 's t _ r f i s h', letters: ['s','t','a','r','f','i','s','h'] },
+  { id: 'jellyfish', word: 'jellyfish', meaning: 'ജെല്ലിഫിഷ്', emoji: '🪼', missingLetter: 'e', missingDisplay: 'j _ l l y f i s h', letters: ['j','e','l','l','y','f','i','s','h'] },
+  { id: 'dolphin', word: 'dolphin', meaning: 'ഡോൾഫിൻ', emoji: '🐬', missingLetter: 'o', missingDisplay: 'd _ l p h i n', letters: ['d','o','l','p','h','i','n'] },
+  { id: 'whale', word: 'whale', meaning: 'തിമിംഗലം', emoji: '🐋', missingLetter: 'a', missingDisplay: 'w h _ l e', letters: ['w','h','a','l','e'] },
+  { id: 'shark', word: 'shark', meaning: 'സ്രാവ്', emoji: '🦈', missingLetter: 'a', missingDisplay: 's h _ r k', letters: ['s','h','a','r','k'] },
+  { id: 'palace', word: 'palace', meaning: 'കൊട്ടാരം', emoji: '🏰', missingLetter: 'a', missingDisplay: 'p _ l a c e', letters: ['p','a','l','a','c','e'] },
+  { id: 'crown', word: 'crown', meaning: 'കിരീടം', emoji: '👑', missingLetter: 'r', missingDisplay: 'c _ o w n', letters: ['c','r','o','w','n'] },
+  { id: 'feast', word: 'feast', meaning: 'വിരുന്ന് / സദ്യ', emoji: '🎂', missingLetter: 'e', missingDisplay: 'f _ a s t', letters: ['f','e','a','s','t'] }
 ];
 
-const SECTION_TITLES={read:'📖 Choose a Lesson to Read',learn:'🗂️ Learn Words',activities:'📝 Activities',games:'🎮 Games',quiz:'❓ Quiz',vocab:'📚 Vocabulary',recast:'📔 Recast Story',kitchen:'🍽️ Kitchen Items',poem_complete:'✍️ Complete Poem',rhyming:'🔤 Rhyming Words'};
-
-let audioCtx=null,chosenVoice=null,currentAudio=null;
-
-function initAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)()}
-
-function playSound(type){
-    if(!state.audioEnabled)return;
-    initAudio();
-    const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
-    osc.connect(gain);gain.connect(audioCtx.destination);
-    const now=audioCtx.currentTime;
-    if(type==='correct'){osc.type='sine';osc.frequency.setValueAtTime(523.25,now);osc.frequency.exponentialRampToValueAtTime(783.99,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.4);osc.start(now);osc.stop(now+.4)}
-    else if(type==='wrong'){osc.type='sawtooth';osc.frequency.setValueAtTime(220,now);osc.frequency.linearRampToValueAtTime(130,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.35);osc.start(now);osc.stop(now+.35)}
-    else if(type==='click'){osc.type='triangle';osc.frequency.setValueAtTime(400,now);gain.gain.setValueAtTime(.15,now);gain.gain.exponentialRampToValueAtTime(.01,now+.08);osc.start(now);osc.stop(now+.08)}
-    else if(type==='fanfare'){[523.25,659.25,783.99,1046.5].forEach((f,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.frequency.setValueAtTime(f,now+i*.12);g.gain.setValueAtTime(.2,now+i*.12);g.gain.exponentialRampToValueAtTime(.01,now+i*.12+.3);o.start(now+i*.12);o.stop(now+i*.12+.3)})}
-}
-
-function pickVoice(){
-    if(!('speechSynthesis'in window))return null;
-    const voices=window.speechSynthesis.getVoices();
-    if(!voices.length)return null;
-    chosenVoice=voices.find(v=>v.lang==='en-IN')||voices.find(v=>v.lang==='en-GB')||voices.find(v=>v.lang&&v.lang.startsWith('en'))||voices[0];
-    return chosenVoice;
-}
-
-// Fixed for App WebViews: Uses HTML5 Audio with Google Translate TTS as primary, with SpeechSynthesis API as fallback.
-function speakText(text, onend) {
-    if (!state.audioEnabled) {
-        if (onend) onend();
-        return;
-    }
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio = null;
-    }
-
-    try {
-        const safeText = text.substring(0, 199); // Google TTS limit
-        const url = "https://translate.google.com/translate_tts?ie=UTF-8&tl=en-IN&client=tw-ob&q=" + encodeURIComponent(safeText);
-        currentAudio = new Audio(url);
-        
-        currentAudio.onended = () => { if (onend) onend(); };
-        currentAudio.onerror = () => { fallbackTTS(text, onend); };
-        
-        const playPromise = currentAudio.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(e => {
-                fallbackTTS(text, onend);
-            });
-        }
-    } catch (e) {
-        fallbackTTS(text, onend);
-    }
-}
-
-function fallbackTTS(text, onend) {
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'en-IN';
-        u.rate = 0.92;
-        u.pitch = 1.05;
-        const v = chosenVoice || pickVoice();
-        if (v) u.voice = v;
-        if (onend) u.onend = onend;
-        u.onerror = function() { if (onend) onend(); };
-        window.speechSynthesis.speak(u);
-    } else {
-        if (onend) onend();
-    }
-}
-
-function toggleAudio(){
-    state.audioEnabled=!state.audioEnabled;
-    document.getElementById('btnAudioToggle').innerText=state.audioEnabled?'🔊':'🔇';
-    if(!state.audioEnabled) {
-        window.speechSynthesis.cancel();
-        if (currentAudio) { currentAudio.pause(); currentAudio = null; }
-    }
-}
-
-function toggleFullscreen(){
-    if(!document.fullscreenElement){document.documentElement.requestFullscreen().catch(()=>{})}
-    else if(document.exitFullscreen){document.exitFullscreen()}
-}
-
-function printPage(){playSound('click');window.print()}
-function downloadPage(){
-    playSound('click');
-    try{
-        const htmlContent="<!DOCTYPE html>\n"+document.documentElement.outerHTML;
-        const blob=new Blob([htmlContent],{type:'text/html'});
-        const url=URL.createObjectURL(blob);
-        const a=document.createElement('a');
-        a.href=url;
-        a.download='Tender_Touch_STD3_Unit1.html';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        setTimeout(()=>URL.revokeObjectURL(url),3000)
-    }catch(e){alert('Download not supported. Use Print.')}
-}
-
-function updateStatsUI(){
-    document.getElementById('valScore').innerText=state.score;
-    document.getElementById('valLives').innerText=state.lives;
-    document.getElementById('valStars').innerText=state.stars;
-    document.getElementById('progressBar').style.width=Math.min(100,state.score/2.5)+'%';
-}
-
-function showRewardModal(){playSound('fanfare');document.getElementById('rewardModal').classList.add('active')}
-function closeRewardModal(){document.getElementById('rewardModal').classList.remove('active');showScreen('homeScreen')}
-
-function revealModel(id,btn){
-    const el=document.getElementById(id);
-    const showing=el.style.display==='block';
-    el.style.display=showing?'none':'block';
-    if(!showing){
-        state.score+=5;
-        updateStatsUI();
-        if(btn)btn.innerText='🙈 Hide Answer';
-    }else if(btn){
-        btn.innerText='💡 Show Answer';
-    }
-}
-
-function genericCheck(selClass,resultId){
-    const sels=document.querySelectorAll('.'+selClass);
-    let correct=0;
-    sels.forEach(s=>{
-        if(s.value.toLowerCase().trim()===s.dataset.ans.toLowerCase().trim()){
-            s.style.borderColor='#4CAF50';
-            correct++;
-        }else{
-            s.style.borderColor='#F44336';
-        }
-    });
-    const r=document.getElementById(resultId);
-    r.style.color=correct===sels.length?'#2E7D32':'#C62828';
-    r.innerText=`Score: ${correct}/${sels.length}  ${correct===sels.length?'Excellent!':'Try again!'}`;
-    if(correct===sels.length){
-        state.score+=15;state.stars+=1;updateStatsUI();playSound('correct');
-    }else{
-        playSound('wrong');
-    }
-}
-
-const STORY_TENDER_TOUCH = [
-    "The morning sun peeped through the window.",
-    "'Sasha, Sasha, it's getting late, dear.' Mother called Sasha in a soft voice. She was half asleep.",
-    "'Oh, Amma, let me sleep a little longer.'",
-    "'No dear, it's already late.' Mother came in and gently patted her. Sasha got out of bed, rubbing her eyes.",
-    "'What's that smell? Lovely!' She took a deep breath. She rushed to the kitchen. Mother followed her.",
-    "Father was busy in the kitchen. 'Sasha, your favourite snack is ready.' He said.",
-    "'Amma, shall I take some of it to school?' Sasha asked.",
-    "'Sure dear, go and get ready.' Mother said. She went to the washroom, humming a tune.",
-    "'Sasha, aren't you ready yet?' It was Naveen, her friend. He was waiting at the gate.",
-    "'Just five minutes!' Sasha hurried up.",
-    "Sasha and Naveen reached school just before the bell rang. 'It smells nice! What's in your bag?' Naveen asked.",
-    "'It's a surprise! Wait for a while.' Sasha took out the tiffin box and opened it. 'Wow! Unniyappam!' Naveen exclaimed.",
-    "'Wait, don't rush. There's enough for everyone.' Naveen said.",
-    "At that moment, someone appeared at the window. 'Hey, who is that?' Sasha asked.",
-    "The girl was looking at them curiously. Her messy hair was swinging in the wind. She looked very tired.",
-    "Sasha went to the window. She offered an unniyappam to the girl. But the girl ran away without taking it.",
-    "'Where does she live?' Sasha asked. 'I don't know,' Naveen said. 'Poor girl! Her clothes are torn,' Sasha said.",
-    "After school, Sasha and Naveen were walking home. On the way, they heard someone singing a song.",
-    "'That's the song our teacher taught us today!' Naveen replied.",
-    "They spotted the girl near a tree. She was cradling her little brother, singing the song. The girl saw them and smiled.",
-    "Sasha opened her bag and took out a picture story book. 'Here's a gift for you,' Sasha handed it over to her.",
-    "The girl wiped her hands on her skirt. She received the book with a smile.",
-    "The next day, the headmaster introduced Kabitha in the school assembly. 'Dear children, today we have a new friend.'",
-    "'I congratulate Sasha and Naveen. They helped Kabitha to join us.' The headmaster encouraged, clapping hands.",
-    "Anupama teacher came forward and hugged Kabitha. The girl smiled. A tiny drop of tear glittered in the corner of her eyes."
+const STORY_SECTIONS = [
+  { title: "1. The Sea Palace", text: "A goldfish was swimming in the sea. He saw many of his friends moving in the same direction. A starfish was floating on the waves. A jellyfish sparkled in the blue water. Dolphins were dancing. 'Where are they going?' The goldfish thought. He followed them. In the deep sea, he saw a beautiful glass palace. It was decorated with gems and pearls. The doors of the palace were wide open. Goldfish and his friends reached the palace." },
+  { title: "2. The Mermaid", text: "A beautiful mermaid appeared near the door. 'How pretty she is!' Exclaimed the goldfish. 'Happy birthday, Princess Julia! We have brought you some gifts!' All of them said together. The jellyfish brought glinting lights. The whales came with jingling bangles. The dolphins carried fragrant flowers. Julia smiled and replied, 'Thank you, my dear friends! Come on, let's begin the party!' There was a big cake on a table in the hall. The party began." },
+  { title: "3. The Birthday Party", text: "Princess Julia went to the table and cut the cake. She looked cute in her beautiful diamond crown. All clapped and sang, 'Happy birthday to you, Princess Julia!' Everyone presented their gifts to Julia. 'I'm so grateful to you all. Let's dance and have fun!' Said the Princess, smiling. The music began. They started dancing." },
+  { title: "4. The Feast", text: "'Now, let's have the feast,' the Princess invited. Everyone started enjoying the food. 'So yummy! So delicious...' A starfish licked his plate. 'I love the chocolate!' A shark gulped a big piece. 'The juice is so refreshing!' A jellyfish sipped to the last drop. Suddenly, a dolphin whistled loudly. 'What's happening?' asked the shark." },
+  { title: "5. A Threat", text: "'The men are coming again to dump more plastic waste in the sea!' Exclaimed the dolphin. All became angry. 'Many of our friends died, eating plastic waste.' The shark ground his teeth. 'We should stop them,' they said together. 'Don't worry friends,' said the blue whale. 'I'm the biggest animal in the world. I'll drive them away.' The blue whale took a swift turn and swished. The shark followed her." },
+  { title: "6. Forgiveness", text: "The whale and the shark went near the boat. The shark beat the boat with his tail. The men in the boat trembled with fear. They cried for help. By this time, the Princess and others reached there. 'I will crush them.' The crab opened her claws. 'Please don't hurt us, we won't dump waste in the sea again!' The men begged. 'You are polluting our sea! You are destroying our lives. Don't repeat it,' warned Princess Julia, and let them go. Rays of the sun brightened the waves." }
 ];
 
-const QA_TENDER_TOUCH = [
-    ["Why did Sasha rush to the kitchen?", "To find out where the lovely smell was coming from."],
-    ["What was Sasha's favourite snack?", "Unniyappam."],
-    ["Why didn't the girl accept the unniyappam?", "She might have been shy or afraid."],
-    ["What did Sasha gift Kabitha?", "A picture story book."],
-    ["Why did the headmaster congratulate Sasha and Naveen?", "Because they helped Kabitha join the school."]
+const QUIZ = [
+  { q: "Where was the goldfish swimming?", opts: ["In the sea", "In a river", "In a pond", "In a lake"], ans: 0 },
+  { q: "What was the glass palace decorated with?", opts: ["Gems and pearls", "Leaves and flowers", "Paper and lights", "Shells and sand"], ans: 0 },
+  { q: "Who was celebrating her birthday?", opts: ["Princess Julia (Mermaid)", "The Goldfish", "The Shark", "The Whale"], ans: 0 },
+  { q: "What gift did the whales bring for Julia?", opts: ["Jingling bangles", "Fragrant flowers", "Glinting lights", "Diamond crown"], ans: 0 },
+  { q: "What gift did the dolphins carry?", opts: ["Fragrant flowers", "Glinting lights", "Cake", "Bangles"], ans: 0 },
+  { q: "Why did the dolphin whistle loudly during the feast?", opts: ["Men came to dump plastic waste", "Food was over", "Music stopped", "It was raining"], ans: 0 },
+  { q: "Why were all the sea creatures angry at men?", opts: ["Because plastic waste kills sea friends", "Men took their cake", "Men made noise", "Men took the palace"], ans: 0 },
+  { q: "Who said 'I am the biggest animal in the world'?", opts: ["Blue whale", "Shark", "Dolphin", "Crab"], ans: 0 },
+  { q: "What did the shark do to the men's boat?", opts: ["Beat the boat with his tail", "Ate the boat", "Jumped inside", "Pushed it away"], ans: 0 },
+  { q: "What did the men promise Princess Julia?", opts: ["They won't dump plastic waste in sea again", "They will bring more cake", "They will dance", "They will clean the shore"], ans: 0 },
+  { q: "Who is the author of the poem 'Water'?", opts: ["Kate Coombs", "Jessie Grimes", "Eric Carle", "Rabindranath Tagore"], ans: 0 },
+  { q: "Which animal becomes a beautiful butterfly in Read & Rejoice?", opts: ["Hungry Caterpillar", "Goldfish", "Mermaid", "Starfish"], ans: 0 }
 ];
 
-const STORY_BOY_BIRD = [
-    "This is Rinku. All his friends have gone home from school. He is waiting for his father.",
-    "'Keeyo..Keeyo...,' Rinku heard a sound. It was the cry of a little bird. It came from a pile of dry leaves.",
-    "Rinku sat on his knees. He groped through the leaves. His hands stumbled on a poor little bird.",
-    "'Meow...Meow...,' Rinku felt the presence of a cat.",
-    "'Will it catch the chick?' He worried. He threw a stone at the cat.",
-    "Rinku gently picked the baby bird. 'Where is its nest? Where is the mother bird?'",
-    "He listened carefully. Finally, he located the tree.",
-    "Rinku put the bird in his pocket. He climbed on to the top of the tree.",
-    "He felt the branches and leaves with his hands to find the nest. At last, he found the nest.",
-    "Rinku took the bird out of his pocket. He carefully placed it in the nest.",
-    "The baby bird chirped happily.",
-    "The mother bird looked at the boy thankfully. But he couldn't see the bird. He was blind!"
-];
-
-const QA_BOY_BIRD = [
-    ["Where did the cry of the little bird come from?", "It came from a pile of dry leaves."],
-    ["Why did Rinku throw a stone at the cat?", "He threw a stone at the cat to protect the baby bird."],
-    ["Where did Rinku put the baby bird while climbing?", "He put the baby bird in his pocket."],
-    ["How did Rinku find the nest?", "He listened carefully and felt the branches with his hands."],
-    ["Why couldn't Rinku see the mother bird?", "Because he was blind."]
-];
-
-const POEM_FRIENDS = [
-    "Let's be friends, let's play together",
-    "Having fun, all together.",
-    "Let's be friends, let's play together",
-    "Having fun, all together!",
-    "Your turn, then my turn",
-    "Let's share, and say 'Thank you'.",
-    "Your turn, then my turn",
-    "Sharing is caring, that's what we do!"
-];
-
-const VOCAB_LIST = [
-    {word: 'accept', meaning: 'to receive', emoji: '🤲'},
-    {word: 'applaud', meaning: 'to clap hands', emoji: '👏'},
-    {word: 'dais', meaning: 'a raised platform', emoji: '🛏️'},
-    {word: 'echo', meaning: 'to repeat a sound', emoji: '🔊'},
-    {word: 'frown', meaning: 'a facial expression indicating displeasure', emoji: '☹️'},
-    {word: 'glitter', meaning: 'to sparkle', emoji: '✨'},
-    {word: 'gratitude', meaning: 'feeling thankful and appreciative', emoji: '🙏'},
-    {word: 'hug', meaning: 'an act of holding somebody tightly to show love', emoji: '🫂'},
-    {word: 'humming', meaning: 'making a low, continuous sound with closed lips', emoji: '🎶'},
-    {word: 'hurry', meaning: 'to move quickly', emoji: '🏃'},
-    {word: 'introduce', meaning: 'to make known to others for the first time', emoji: '🤝'},
-    {word: 'lullaby', meaning: 'cradle song', emoji: '🎵'},
-    {word: 'murmur', meaning: 'to speak in a low, soft voice', emoji: '🗣️'},
-    {word: 'peep', meaning: 'to look secretly', emoji: '👀'},
-    {word: 'rush', meaning: 'to move quickly', emoji: '💨'},
-    {word: 'surprise', meaning: 'something unexpected', emoji: '😲'},
-    {word: 'tender', meaning: 'soft', emoji: '🌸'},
-    {word: 'wipe', meaning: 'to clean', emoji: '🧻'}
-];
-
-const QUIZ_DATA = {
-    tender_touch: [
-        {q: "What was Sasha's favourite snack?", opts: ["Dosa", "Idli", "Unniyappam", "Vada"], ans: 2},
-        {q: "Who was singing a lullaby near the tree?", opts: ["Sasha", "Naveen", "Anupama teacher", "Kabitha"], ans: 3},
-        {q: "What did Sasha give to Kabitha?", opts: ["A dress", "A picture story book", "Unniyappam", "A pen"], ans: 1},
-        {q: "Why did Kabitha smile with tears in her eyes?", opts: ["She was sad", "She was angry", "She was full of gratitude", "She was hurt"], ans: 2}
-    ],
-    boy_and_bird: [
-        {q: "Where did Rinku hear the bird's cry from?", opts: ["A branch", "A pile of dry leaves", "The roof", "The sky"], ans: 1},
-        {q: "What animal did Rinku chase away?", opts: ["A dog", "A snake", "A cat", "A monkey"], ans: 2},
-        {q: "Where did Rinku put the baby bird while climbing the tree?", opts: ["In his bag", "In his hand", "In his pocket", "On his head"], ans: 2},
-        {q: "Why couldn't Rinku see the mother bird?", opts: ["It was dark", "The mother bird flew away", "He was blind", "He closed his eyes"], ans: 2}
-    ],
-    lets_be_friends: [
-        {q: "What should we say when we share?", opts: ["Sorry", "Thank you", "Goodbye", "Please"], ans: 1},
-        {q: "What is sharing?", opts: ["Caring", "Boring", "Sad", "Angry"], ans: 0}
-    ]
-};
-
-const SEQ_EVENTS = [
-    {text: "Sasha's father made unniyappam.", order: 1},
-    {text: "Naveen noticed a girl next to the window.", order: 2},
-    {text: "Sasha and Naveen spotted Kabitha near a tree.", order: 3},
-    {text: "Sasha gave a picture story book to Kabitha.", order: 4},
-    {text: "The headmaster congratulated Sasha and Naveen.", order: 5}
-];
-
-function showScreen(id){
-    playSound('click');
-    if('speechSynthesis'in window)window.speechSynthesis.cancel();
-    if(currentAudio){currentAudio.pause();currentAudio=null;}
-    document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
-    const t=document.getElementById(id);
-    if(t)t.classList.add('active');
-    if(id==='modelQPScreen')renderModelQP();
-    if(id==='unitQPScreen')renderUnitQP();
+function showScreen(id) {
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  const t = document.getElementById(id);
+  if (t) t.classList.add('active');
+  if (id === 'learnScreen') renderLearnCards();
+  if (id === 'readingScreen') renderStory();
+  if (id === 'activitiesScreen') renderActivities();
+  if (id === 'quizScreen') renderQuiz();
+  if (id === 'vocabScreen') renderVocab();
+  if (id === 'poemScreen') renderPoems();
+  if (id === 'rejoiceScreen') renderRejoice();
+  if (id === 'modelQPScreen') renderModelQP();
 }
 
-function openChoose(section){
-    state.currentSection=section;
-    state.lastChooseSection=section;
-    document.getElementById('chooseTitle').innerText=SECTION_TITLES[section]||'Choose a Lesson';
-    const list=document.getElementById('chooseList');
-    list.innerHTML='';
-    LESSONS.forEach(L=>{
-        const d=document.createElement('div');
-        d.className='lesson-pick';
-        d.innerHTML=`<div class="lp-emoji">${L.emoji}</div><div><div class="lp-title">${L.title}</div><div class="lp-sub">${L.sub}</div></div>`;
-        d.onclick=()=>selectLesson(L.id);
-        list.appendChild(d)
-    });
-    showScreen('chooseScreen')
+function renderLearnCards() {
+  const g = document.getElementById('learnCardsGrid');
+  g.innerHTML = '';
+  VOCABULARY.forEach(v => {
+    g.innerHTML += `<div class="word-card" onclick="speakEnglish('${v.word}')"><div class="card-emoji">${v.emoji}</div><div class="word-english en">${v.word}</div><div class="word-meaning ml">${v.meaning}</div><button class="print-btn" style="font-size:0.8rem; padding:4px 10px; background:#E11D48;">🔊 Listen</button></div>`;
+  });
 }
 
-function selectLesson(lessonId){
-    state.currentLesson=lessonId;
-    state.visited[state.currentSection+'_'+lessonId]=true;
-    if(state.currentSection==='games'){
-        openGamesMenu(lessonId);
-        return;
-    }
-    renderContentFor(state.currentSection,lessonId)
+function renderStory() {
+  const c = document.getElementById('storyContainer');
+  c.innerHTML = '';
+  STORY_SECTIONS.forEach(s => {
+    c.innerHTML += `<div class="story-para"><h3 class="en">${s.title}</h3><p class="en">${s.text}</p><button class="mini-play" onclick="speakEnglish('${s.text.replace(/'/g, "\\'")}')">🔊</button></div>`;
+  });
 }
 
-function goBackFromContent(){
-    if(state.lastChooseSection)openChoose(state.lastChooseSection);
-    else showScreen('homeScreen');
+let readingAll = false;
+function readAllStory() {
+  if (readingAll) { window.speechSynthesis.cancel(); readingAll = false; return; }
+  readingAll = true;
+  let idx = 0;
+  function next() {
+    if (idx >= STORY_SECTIONS.length || !readingAll) { readingAll = false; return; }
+    speakEnglish(STORY_SECTIONS[idx].text, () => { idx++; next(); });
+  }
+  next();
 }
 
-function openGamesMenu(lessonId){
-    const L=LESSONS.find(x=>x.id===lessonId);
-    document.getElementById('gamesMenuTitle').innerText=`🎮 Games – ${L?L.title:''}`;
-    document.getElementById('gamesButtons').innerHTML=`
-    <button class="btn-menu b1" onclick="launchGame(1)">🖼️ Guess the Word</button>
-    <button class="btn-menu b2" onclick="launchGame(2)">🔗 Word Match</button>
-    <button class="btn-menu b6" onclick="launchGame(7)">📋 Sequence Events</button>
-    <button class="btn-menu b10" onclick="launchGame(8)">🎭 Who Said It?</button>
-    <button class="btn-menu b15" onclick="launchGame(10)">📝 Complete Sentence</button>`;
-    showScreen('gamesMenuScreen');
+function renderActivities() {
+  const c = document.getElementById('activitiesContainer');
+  c.innerHTML = `
+  <div class="qp-section"><div class="qp-heading en">Activity 1: Identify Julia's Friends (Textbook Page 46)</div><p class="en">Whale | Octopus | Crab | Shark | Jellyfish | Mackerel | Starfish | Prawn</p></div>
+  <div class="qp-section"><div class="qp-heading en">Activity 2: Classify Fruits and Vegetables (Page 46)</div><p class="en"><b>Fruits:</b> Apple, Grapes, Strawberry, Pineapple, Watermelon, Papaya, Orange, Kiwi.<br><b>Vegetables:</b> Carrot, Potato, Cucumber, Broccoli, Cabbage, Tomato, Beetroot, Radish.</p></div>
+  <div class="qp-section"><div class="qp-heading en">Activity 3: Past Tense Transformation (Page 49)</div><button class="reveal-model-btn" onclick="revealModel('a3Model', this)">💡 Show Model Sentences</button><div class="model-answer-box en" id="a3Model">1. A mermaid in a beautiful dress <b>appeared</b> near the window.<br>2. The jellyfish <b>brought</b> glinting lights.<br>3. The whales <b>came</b> with jingling bangles.<br>4. The dolphins <b>carried</b> fragrant flowers.<br>5. Julia <b>smiled</b>.<br>6. The party <b>began</b>.</div></div>
+  <div class="qp-section"><div class="qp-heading en">Activity 4: Collective Nouns (Page 49)</div><p class="en">a <b>team</b> of players | a <b>school</b> of fish | a <b>bunch</b> of bananas | a <b>pack</b> of dogs | a <b>herd</b> of sheep | a <b>bunch</b> of keys</p></div>
+  `;
 }
 
-function renderContentFor(section,lessonId){
-    const L=LESSONS.find(x=>x.id===lessonId);
-    document.getElementById('contentTitle').innerText=(SECTION_TITLES[section]||section)+' → '+(L?L.title:'');
-    const body=document.getElementById('contentBody');
-    body.innerHTML='';
-
-    if(section==='read') renderRead(body,lessonId);
-    else if(section==='learn') renderLearn(body,lessonId);
-    else if(section==='activities') renderActivities(body,lessonId);
-    else if(section==='quiz') renderQuiz(body,lessonId);
-    else if(section==='vocab') renderVocab(body);
-    else if(section==='recast') renderRecast(body, lessonId);
-    else if(section==='kitchen') renderKitchen(body);
-    else if(section==='poem_complete') renderPoemComplete(body);
-    else if(section==='rhyming') renderRhyming(body);
-
-    showScreen('contentScreen');
+function renderVocab() {
+  const v = document.getElementById('vocabList');
+  v.innerHTML = '<div style="display:grid; grid-template-columns:1fr 1fr 1fr; font-weight:800; padding:10px; background:#E11D48; color:white; border-radius:10px;"><div>Word</div><div>English</div><div class="ml">മലയാളം</div></div>';
+  VOCABULARY.forEach(item => {
+    v.innerHTML += `<div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:10px; border-bottom:1px solid #CBD5E1;"><div class="en" style="font-weight:800; color:#E11D48;">${item.word}</div><div class="en">${item.word}</div><div class="ml">${item.meaning}</div></div>`;
+  });
 }
 
-function renderRead(body,lessonId){
-    let lines=[],qa=[],title='';
-    if(lessonId==='tender_touch'){lines=STORY_TENDER_TOUCH;qa=QA_TENDER_TOUCH;title='Tender Touch';}
-    else if(lessonId==='boy_and_bird'){lines=STORY_BOY_BIRD;qa=QA_BOY_BIRD;title='The Boy and the Bird';}
-    else if(lessonId==='lets_be_friends'){lines=POEM_FRIENDS;title='Let\'s be Friends';}
+const POEM_WATER = "Turn on the tap and the water flows. Does anyone know where the water goes? Turn on the tap and the water comes. Does anyone know where the water's from? Water is clean and water is cool, living in rivers and raining in pools. Yet, water can trickle and wells can dry up, till there's nothing left to fill the cup.";
 
-    let html = `<div class="story-title-wrap"><span class="story-title">${title}</span></div><button class="read-all-btn" id="readAllBtn">🔊 Read All / Stop</button><div id="storyParas"></div>`;
-    if(qa && qa.length > 0) {
-        html += `<div class="activity-block" style="margin-top:20px"><div class="activity-heading">🔎 Let's Explore</div><div id="qaBox"></div></div>`;
-    }
-    body.innerHTML = html;
+const POEM_BIRTHDAY = "Happy birthday to you, Happy birthday to you, Happy birthday dear friend, Happy birthday to you. From good friends and true friends, From old friends and new friends, May good luck go with you, And happiness too.";
 
-    const paras=document.getElementById('storyParas');
-    lines.forEach(line=>{
-        const div=document.createElement('div');
-        div.className='story-para';
-        div.innerHTML=`<p>${line}</p><button class="mini-play" onclick="speakText(this.dataset.t)" data-t="${line.replace(/"/g,'&quot;')}">🔊</button>`;
-        paras.appendChild(div);
-    });
-
-    if(qa && qa.length > 0) {
-        const qaBox=document.getElementById('qaBox');
-        qa.forEach((item,i)=>{
-            const el=document.createElement('div');
-            el.className='qa-line';
-            el.innerHTML=`<div class="q">${i+1}. ${item[0]}</div><div class="a" id="qa${i}">${item[1]}</div><button class="reveal-btn" onclick="document.getElementById('qa${i}').classList.toggle('show')">💡 Show Answer</button>`;
-            qaBox.appendChild(el);
-        });
-    }
-
-    let reading=false;
-    document.getElementById('readAllBtn').onclick=function(){
-        if(reading){
-            window.speechSynthesis.cancel();
-            if(currentAudio) { currentAudio.pause(); currentAudio=null; }
-            reading=false;
-            return;
-        }
-        reading=true;
-        let i=0;
-        function next(){
-            if(i>=lines.length||!reading){reading=false;return}
-            speakText(lines[i],()=>{i++;next()})
-        }
-        next();
-    }
+function renderPoems() {
+  document.getElementById('poemContainer').innerHTML = `
+  <div class="qp-section" style="text-align:center;">
+    <h3 class="en" style="font-weight:900; font-size:1.4rem; color:#BE123C;">1. Water (by Kate Coombs)</h3>
+    <p class="en" style="line-height:2.2; font-size:1.1rem; white-space:pre-line;">${POEM_WATER}</p>
+    <button class="print-btn" style="margin-top:10px; background:#E11D48;" onclick="speakEnglish('${POEM_WATER.replace(/'/g, "\\'")}')">🔊 Recite Full Poem (Water)</button>
+  </div>
+  <div class="qp-section" style="text-align:center;">
+    <h3 class="en" style="font-weight:900; font-size:1.4rem; color:#0288D1;">2. Birthday Song</h3>
+    <p class="en" style="line-height:2.2; font-size:1.1rem; white-space:pre-line;">${POEM_BIRTHDAY}</p>
+    <button class="print-btn" style="margin-top:10px; background:#0288D1;" onclick="speakEnglish('${POEM_BIRTHDAY.replace(/'/g, "\\'")}')">🔊 Recite Full Birthday Song</button>
+  </div>
+  `;
 }
 
-function renderLearn(body,lessonId){
-    const subset = VOCAB_LIST.slice(0, 10);
-    body.innerHTML=`<div class="cards-grid" id="learnGrid"></div>`;
-    const grid=document.getElementById('learnGrid');
-    subset.forEach(item=>{
-        const card=document.createElement('div');
-        card.className='word-card';
-        card.onclick=()=>{card.classList.add('playing');speakText(item.word);playSound('click');setTimeout(()=>card.classList.remove('playing'),1200)};
-        card.innerHTML=`<div class="card-emoji">${item.emoji}</div><div class="word-eng">${item.word}</div><div class="word-meaning ml">${item.meaning}</div><button class="replay-btn">🔊 Listen</button>`;
-        grid.appendChild(card);
-    });
-}
+const CATERPILLAR_TEXT = "In the light of the moon, a little egg lay on a leaf. One Sunday morning, the warm sun came up and pop! out of the egg came a tiny and very hungry caterpillar. On Monday, she ate through one apple, but she was still hungry. On Tuesday, she ate through two pears, but she was still hungry. On Wednesday, she ate through three plums. On Thursday, she ate through four strawberries. On Friday, she ate through five oranges. On Saturday, she ate cake, ice cream, pickle, cheese, lollipop and pie! That night she had a stomach ache. The next day she ate a nice green leaf and felt much better. She built a small house called a cocoon around herself. She stayed inside for two weeks. Then she nibbled a hole and pushed her way out... She became a beautiful butterfly!";
 
-function renderActivities(body,lessonId){
-    if(lessonId === 'tender_touch') {
-        body.innerHTML = `
-        <div class="activity-heading">💭 Sasha's Thoughts</div>
-        <div class="activity-block">
-            <p>Sasha offered an unniyappam to the girl. But the girl ran away. What could be Sasha's feelings?</p>
-            <textarea class="write-box" placeholder="Why did she run away?"></textarea>
-            <button class="reveal-model-btn" onclick="revealModel('thoughtModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="thoughtModel">Why did she run away? Is she scared of us? She looks so tired and hungry. Her clothes are torn. I wish she had taken the unniyappam. I must help her somehow.</div>
-        </div>
-        <div class="activity-heading">💬 Write a conversation</div>
-        <div class="activity-block">
-            <p>Write the conversation between Sasha and Anu teacher about Kabitha.</p>
-            <textarea class="write-box" placeholder="Sasha: Teacher, on our way home we saw a girl..."></textarea>
-            <button class="reveal-model-btn" onclick="revealModel('convModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="convModel">Sasha: Teacher, on our way home we saw a girl.<br>Teacher: Oh! Who was it?<br>Sasha: We don't know her name. She looked very tired and her clothes were torn.<br>Teacher: Where did you see her?<br>Sasha: We saw her sitting under a tree, singing a lullaby.<br>Teacher: Don't worry, Sasha. We will find her and help her.</div>
-        </div>`;
-    } else if (lessonId === 'boy_and_bird') {
-        body.innerHTML = `
-        <div class="activity-heading">📝 Describe the Scene</div>
-        <div class="activity-block">
-            <p>Write three sentences about how Rinku saved the bird.</p>
-            <textarea class="write-box" placeholder="Rinku heard a cry..."></textarea>
-            <button class="reveal-model-btn" onclick="revealModel('birdModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="birdModel">Rinku heard the cry of a little bird from dry leaves. He threw a stone at the cat to protect the bird. He carefully climbed the tree and placed the baby bird back in its nest.</div>
-        </div>`;
-    } else {
-        body.innerHTML = `<div class="activity-heading">📝 Share and Care</div>
-        <div class="activity-block">
-            <p>List 3 things you like to share with your friends:</p>
-            <input type="text" class="fillbox" placeholder="1."><br><br>
-            <input type="text" class="fillbox" placeholder="2."><br><br>
-            <input type="text" class="fillbox" placeholder="3.">
-        </div>`;
-    }
-}
-
-function renderQuiz(body,lessonId){
-    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender_touch'];
-    state.quizSubmitted=false;
-    body.innerHTML=`<div id="quizScoreBox" style="display:none" class="quiz-score-box"></div><div id="quizContainer"></div><div style="text-align:center"><button class="submit-quiz-btn" onclick="submitQuiz('${lessonId}')">✅ Submit Answers</button></div>`;
-    const c=document.getElementById('quizContainer');
-    quiz.forEach((item,qi)=>{
-        const qd=document.createElement('div');
-        qd.className='quiz-q';
-        qd.innerHTML=`<div class="qtext">${qi+1}. ${item.q}</div><div class="quiz-opts" id="qopts${qi}"></div>`;
-        c.appendChild(qd);
-        const od=qd.querySelector('#qopts'+qi);
-        item.opts.forEach((opt,oi)=>{
-            const b=document.createElement('div');
-            b.className='quiz-opt';
-            b.innerText=opt;
-            b.dataset.qi=qi;
-            b.dataset.oi=oi;
-            b.onclick=()=>{if(state.quizSubmitted)return;document.querySelectorAll(`#qopts${qi} .quiz-opt`).forEach(e=>e.classList.remove('picked'));b.classList.add('picked');playSound('click')};
-            od.appendChild(b);
-        });
-    });
-}
-
-function submitQuiz(lessonId){
-    if(state.quizSubmitted)return;
-    state.quizSubmitted=true;
-    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender_touch'];
-    let score=0;
-    quiz.forEach((item,qi)=>{
-        const opts=document.querySelectorAll(`#qopts${qi} .quiz-opt`);
-        const picked=document.querySelector(`#qopts${qi} .picked`);
-        if(picked&&parseInt(picked.dataset.oi)===item.ans)score++;
-        opts.forEach(o=>{
-            if(parseInt(o.dataset.oi)===item.ans)o.classList.add('correct-ans');
-            else if(o.classList.contains('picked'))o.classList.add('wrong-ans');
-        });
-    });
-    state.score+=score*10;
-    state.stars+=(score>=Math.ceil(quiz.length*.8)?2:1);
-    updateStatsUI();
-    const box=document.getElementById('quizScoreBox');
-    box.style.display='block';
-    box.innerHTML=`Your Score: ${score} / ${quiz.length}  ${score>=Math.ceil(quiz.length*.8)?'Excellent!':score>=Math.ceil(quiz.length*.5)?'Good job!':'Keep practicing!'}`;
-    playSound(score>=Math.ceil(quiz.length*.8)?'fanfare':'correct');
-}
-
-function renderVocab(body) {
-    body.innerHTML=`<table class="vocab-table"><thead><tr><th>Word</th><th>Meaning</th></tr></thead><tbody>${VOCAB_LIST.map(v=>`<tr><td><span class="vocab-emoji">${v.emoji}</span> <b>${v.word}</b></td><td class="ml">${v.meaning}</td></tr>`).join('')}</tbody></table>`;
-}
-
-function renderRecast(body, lessonId) {
-    if(lessonId === 'tender_touch') {
-        body.innerHTML = `
-        <div class="activity-heading">📔 RECAST - Narrate the story</div>
-        <div class="activity-block">
-            <p>1. What did Sasha's father make? <input type="text" class="fillbox a-fill3" data-ans="Unniyappam" placeholder="..."></p>
-            <p>2. Who did Sasha see near the door? <input type="text" class="fillbox a-fill3" data-ans="A girl" placeholder="..."></p>
-            <p>3. What did Sasha and Naveen hear on the way home? <input type="text" class="fillbox a-fill3" data-ans="A song" placeholder="..."></p>
-            <p>4. What did Sasha give Kabitha? <input type="text" class="fillbox a-fill3" data-ans="A picture story book" placeholder="..."></p>
-            <p>5. What happened in the school assembly? <input type="text" class="fillbox a-fill3" data-ans="Headmaster introduced Kabitha" placeholder="..."></p>
-            <button class="check-btn" onclick="genericCheck('a-fill3','aRes3')">Check</button><div id="aRes3" class="result-msg"></div>
-        </div>
-        `;
-    } else {
-        body.innerHTML = `<div class="activity-heading">Please select 'Tender Touch' story for Recast activity.</div>`;
-    }
-}
-
-function renderKitchen(body) {
-    body.innerHTML = `
-    <div class="activity-heading">🍽️ Kitchen Items</div>
-    <div class="activity-block">
-        <p>Classify into Utensils and Food Items:</p>
-        <p>spoon, egg, plate, banana, knife, tomato, pan, rice</p>
-        <br>
-        <p><b>Utensils:</b> <input type="text" class="fillbox a-fill4" data-ans="spoon, plate, knife, pan" placeholder="..."></p>
-        <p><b>Food Items:</b> <input type="text" class="fillbox a-fill4" data-ans="egg, banana, tomato, rice" placeholder="..."></p>
-        <button class="check-btn" onclick="genericCheck('a-fill4','aRes4')">Check (Type exactly)</button><div id="aRes4" class="result-msg"></div>
+function renderRejoice() {
+  document.getElementById('rejoiceContainer').innerHTML = `
+  <div class="qp-section">
+    <h3 class="en" style="font-weight:900; font-size:1.3rem; color:#15803D; margin-bottom:10px;">The Hungry Caterpillar (by Eric Carle)</h3>
+    <p class="en" style="line-height:2; font-size:1.1rem;">${CATERPILLAR_TEXT}</p>
+    <div style="text-align:center; margin-top:15px;">
+      <button class="print-btn" style="background:#15803D;" onclick="speakEnglish('${CATERPILLAR_TEXT.replace(/'/g, "\\'")}')">🔊 Read Caterpillar Story</button>
     </div>
-    `;
+  </div>
+  `;
 }
 
-function renderPoemComplete(body) {
-     body.innerHTML = `
-    <div class="activity-heading">✍️ Complete the Poem</div>
-    <div class="activity-block">
-        <p>Use words: fluttering, dancing, swaying</p>
-        <br>
-        <p>My friend is like a butterfly<br><input type="text" class="fillbox a-fill6" data-ans="fluttering"> in the garden.</p>
-        <p>My friend is like a peacock<br><input type="text" class="fillbox a-fill6" data-ans="dancing"> in the woods.</p>
-        <p>My friend is like a tree<br><input type="text" class="fillbox a-fill6" data-ans="swaying"> in the wind.</p>
-        <button class="check-btn" onclick="genericCheck('a-fill6','aRes6')">Check</button><div id="aRes6" class="result-msg"></div>
-    </div>
-    `;
+function renderModelQP() {
+  document.getElementById('modelQPContainer').innerHTML = `
+  <div style="text-align:center; margin-bottom:15px;"><h2 class="en" style="font-weight:900; color:#BE123C; font-size:1.5rem;">MODEL QUESTION PAPER</h2><div class="ml">മൂന്നാം ക്ലാസ് • ഇംഗ്ലീഷ് • യൂണിറ്റ് 2: FESTIVE FUN</div></div>
+  <div class="qp-section"><div class="qp-heading en">I. Choose the correct answer (5 × 1 = 5 Marks)</div><div class="qp-q en">1. The goldfish saw a glass palace in the ............ . (deep sea, river, pond)</div><div class="qp-q en">2. Princess Julia wore a beautiful diamond ............ . (crown, ring, belt)</div><div class="qp-q en">3. Whales brought ............ bangles for Julia. (jingling, plastic, paper)</div><div class="qp-q en">4. Men came to dump ............ waste in the sea. (plastic, organic, paper)</div><div class="qp-q en">5. The blue whale is the ............ animal in the world. (biggest, smallest, tiny)</div></div>
+  <div class="qp-section"><div class="qp-heading en">II. Match collective nouns (4 × 1 = 4 Marks)</div><div class="qp-q en">a) fish - school | b) dogs - pack | c) bananas - bunch | d) sheep - herd</div></div>
+  <div class="qp-section"><div class="qp-heading en">III. Answer the questions (3 × 2 = 6 Marks)</div><div class="qp-q en">1. Why did all the sea creatures get angry?</div><div class="qp-q en">2. Who warned the men not to pollute the sea?</div></div>
+  <button class="reveal-model-btn" style="width:100%;" onclick="revealModel('qpAns', this)">💡 Show Model Answers</button>
+  <div class="model-answer-box en" id="qpAns">1. deep sea | 2. crown | 3. jingling | 4. plastic | 5. biggest</div>
+  `;
 }
 
-function renderRhyming(body) {
-    body.innerHTML = `
-    <div class="activity-heading">🔤 Rhyming Words</div>
-    <div class="activity-block">
-        <p>Match the rhyming words (down, gold, understand):</p>
-        <br>
-        <p>frown - <input type="text" class="fillbox a-fill5" data-ans="down"></p>
-        <p>hold - <input type="text" class="fillbox a-fill5" data-ans="gold"></p>
-        <p>hand - <input type="text" class="fillbox a-fill5" data-ans="understand"></p>
-        <button class="check-btn" onclick="genericCheck('a-fill5','aRes5')">Check</button><div id="aRes5" class="result-msg"></div>
-    </div>
-    `;
+function launchGame(n) {
+  state.activeGame = n;
+  state.currentGameIndex = 0;
+  state.gameQueue = [...VOCABULARY].sort(() => Math.random() - 0.5);
+  renderCurrentGame();
 }
 
-function renderModelQP(){
-    document.getElementById('modelQPContainer').innerHTML=`
-    <div style="text-align:center;margin-bottom:18px"><h2 style="color:#00BCD4;font-size:1.4rem">Model Question Paper</h2><div class="ml">യൂണിറ്റ് 1 • Tender Touch</div><div style="font-size:.95rem;color:#555;margin-top:6px">Max Marks: 30 | Time: 45 minutes</div></div>
-    <div class="qp-section">
-        <div class="qp-heading">I. Choose the correct answer – 5 × 1 = 5</div>
-        <div class="qp-q"><span class="qnum">1.</span> Who made unniyappam for Sasha?<br>(a) Mother (b) Father (c) Naveen (d) Kabitha</div>
-        <div class="qp-q"><span class="qnum">2.</span> Kabitha was singing a _______ near the tree.<br>(a) film song (b) poem (c) lullaby (d) prayer</div>
-        <div class="qp-q"><span class="qnum">3.</span> What did Rinku throw at the cat?<br>(a) Stick (b) Fruit (c) Stone (d) Ball</div>
-        <div class="qp-q"><span class="qnum">4.</span> Rhyming word for 'hold' is _______.<br>(a) hand (b) cold (c) gold (d) down</div>
-        <div class="qp-q"><span class="qnum">5.</span> Rinku was a _______ boy.<br>(a) deaf (b) blind (c) lame (d) dumb</div>
-    </div>
-    <div class="qp-section">
-        <div class="qp-heading">II. Classify into Utensils and Food Items – 4 × 1 = 4</div>
-        <div class="qp-q">Spoon, Egg, Plate, Banana.</div>
-    </div>
-    <div class="qp-section">
-        <div class="qp-heading">III. Write the missing rhyming words – 2 × 1 = 2</div>
-        <div class="qp-q">1. frown - _______ <br>2. hand - _______</div>
-    </div>
-    <div class="qp-section">
-        <div class="qp-heading">IV. Answer briefly – 4 × 2 = 8</div>
-        <div class="qp-q"><span class="qnum">1.</span> Why did Sasha rush to the kitchen?</div>
-        <div class="qp-q"><span class="qnum">2.</span> How did Rinku save the bird?</div>
-        <div class="qp-q"><span class="qnum">3.</span> What did Sasha give Kabitha?</div>
-        <div class="qp-q"><span class="qnum">4.</span> Why did Kabitha smile with tears in her eyes?</div>
-    </div>
-    <button class="reveal-model-btn" style="width:100%;margin-top:10px" onclick="revealModel('qpAnswers',this)">💡 Show Answer Key</button>
-    <div class="model-answer-box" id="qpAnswers">
-        I. 1(b), 2(c), 3(c), 4(c), 5(b)<br>
-        II. Utensils: Spoon, Plate | Food: Egg, Banana<br>
-        III. 1. down 2. understand<br>
-        IV. (Descriptive answers based on text)
-    </div>`;
-}
-
-function renderUnitQP(){
-    const paper = document.getElementById('unitQPPaper');
-    paper.innerHTML = `
-        <div class="qp-school">MODEL SCHOOL EXAMINATIONS - 2026</div>
-        <div class="qp-title">UNIT EVALUATION - UNIT 1</div>
-        <div class="qp-meta"><span>Class: 3</span><span>Subject: English</span><span>Time: 1 Hr</span><span>Marks: 20</span></div>
-        
-        <div class="qp-act">
-            <div class="qp-act-h">Activity 1: Read and Answer (4 Marks)</div>
-            <p>Read the passage and answer the questions.</p>
-            <p><i>Sasha and Naveen spotted the girl near a tree. She was cradling her little brother, singing the song. The girl saw them and smiled. She tried to comb her dry hair with her fingers. Sasha opened her bag and took out a book. "Here's a gift for you," Sasha handed it over to her.</i></p>
-            <br>
-            <p>1. Where did Sasha and Naveen spot the girl?</p>
-            <div class="qp-lines"></div>
-            <p>2. What was the girl doing with her little brother?</p>
-            <div class="qp-lines"></div>
-            <p>3. What did Sasha give to the girl?</p>
-            <div class="qp-lines"></div>
-            <p>4. How did the girl react to the gift?</p>
-            <div class="qp-lines"></div>
-        </div>
-
-        <div class="qp-act">
-            <div class="qp-act-h">Activity 2: Write a Conversation (4 Marks)</div>
-            <p>Write a short conversation between Sasha and Kabitha when Sasha gives her the book.</p>
-            <div class="qp-lines"></div>
-            <div class="qp-lines"></div>
-            <div class="qp-lines"></div>
-        </div>
-
-        <div class="qp-act">
-            <div class="qp-act-h">Activity 3: Complete the poem (4 Marks)</div>
-            <p>Let's be friends, let's ________ together</p>
-            <p>Having fun, all ________.</p>
-            <p>Your turn, then ________ turn</p>
-            <p>Sharing is ________, that's what we do!</p>
-        </div>
-
-        <div class="qp-act">
-            <div class="qp-act-h">Activity 4: Classify the items (4 Marks)</div>
-            <p>Put the words in correct group: (spoon, egg, knife, tomato)</p>
-            <p><b>Kitchen Utensils:</b> 1. ________  2. ________</p>
-            <p><b>Food Items:</b> 1. ________ 2. ________</p>
-        </div>
-
-        <div class="qp-act">
-            <div class="qp-act-h">Activity 5: Describe the picture (4 Marks)</div>
-            <p>Write 3 sentences about Sasha watching Kabitha near the window.</p>
-            <div class="qp-lines"></div>
-            <div class="qp-lines"></div>
-            <div class="qp-lines"></div>
-        </div>
-
-        <div class="qp-footer">*** All the Best ***</div>
-    `;
-}
-
-// GAMES LOGIC
-function launchGame(num){
-    showScreen('game'+num+'Screen');
-    if(num===7) initGame7();
-    if(num===8) initGame8();
-    if(num===10) initGame10();
-}
-
-let g7Seq, g7Selected = [];
-
-function initGame7(){
-    const list = [...SEQ_EVENTS].sort(()=>Math.random()-.5);
-    const c = document.getElementById('g7SeqList');
-    c.innerHTML = '';
-    g7Selected = [];
-    list.forEach(item => {
-        const d = document.createElement('div');
-        d.className = 'seq-item';
-        d.innerHTML = `<div class="seq-num">?</div><div>${item.text}</div>`;
-        d.dataset.id = item.order;
-        d.onclick = function() {
-            if(d.classList.contains('selected')) {
-                d.classList.remove('selected');
-                const idx = g7Selected.indexOf(item.order);
-                if(idx>-1) g7Selected.splice(idx, 1);
-                d.querySelector('.seq-num').innerText = '?';
-            } else {
-                d.classList.add('selected');
-                g7Selected.push(item.order);
-                d.querySelector('.seq-num').innerText = g7Selected.length;
-            }
-            document.querySelectorAll('.seq-item.selected').forEach(el => {
-                const i = g7Selected.indexOf(parseInt(el.dataset.id));
-                el.querySelector('.seq-num').innerText = i+1;
-            });
-        };
-        c.appendChild(d);
+function renderCurrentGame() {
+  const item = state.gameQueue[state.currentGameIndex];
+  if (state.activeGame === 1) {
+    showScreen('game1Screen');
+    document.getElementById('g1ImgBox').innerText = item.emoji;
+    const grid = document.getElementById('g1OptionsGrid'); grid.innerHTML = '';
+    const opts = [item.word, 'palace', 'crown', 'feast'].sort(() => Math.random() - 0.5);
+    opts.forEach(o => {
+      grid.innerHTML += `<button class="option-btn en" onclick="handleGameAns('${o}'==='${item.word}')">${o}</button>`;
     });
-    document.getElementById('g7Result').innerText = '';
-}
-
-function checkSequence(){
-    if(g7Selected.length !== SEQ_EVENTS.length){
-        document.getElementById('g7Result').innerText = "Please order all items!";
-        return;
-    }
-    let correct = true;
-    for(let i=0; i<SEQ_EVENTS.length; i++){
-        if(g7Selected[i] !== (i+1)) {
-            correct = false; break;
-        }
-    }
-    const r = document.getElementById('g7Result');
-    if(correct) {
-        r.style.color = '#2E7D32';
-        r.innerText = "Perfect! The sequence is correct.";
-        playSound('fanfare');
-        showRewardModal();
-    } else {
-        r.style.color = '#C62828';
-        r.innerText = "Not quite right. Try again!";
-        playSound('wrong');
-    }
-}
-
-function initGame8(){
-    const qData = [
-        {q: "Sasha, your favourite snack is ready.", o: ["Father", "Naveen"], a: 0},
-        {q: "Just five minutes!", o: ["Kabitha", "Sasha"], a: 1},
-        {q: "I have seen her somewhere.", o: ["Naveen", "Mother"], a: 0},
-        {q: "Let's welcome her.", o: ["Teacher", "Headmaster"], a: 1}
-    ];
-    const item = qData[Math.floor(Math.random()*qData.length)];
-    document.getElementById('g8QuoteBox').innerText = `"${item.q}"`;
-    const opts = document.getElementById('g8OptionsGrid');
-    opts.innerHTML = '';
-    item.o.forEach((opt, idx) => {
-        const b = document.createElement('button');
-        b.className = 'option-btn';
-        b.innerText = opt;
-        b.onclick = () => {
-            if(idx === item.a){
-                b.classList.add('correct');
-                playSound('correct');
-                setTimeout(()=> {showRewardModal(); initGame8();}, 1500);
-            } else {
-                b.classList.add('wrong');
-                playSound('wrong');
-                setTimeout(()=>b.classList.remove('wrong'), 800);
-            }
-        };
-        opts.appendChild(b);
+  } else {
+    showScreen('game6Screen');
+    document.getElementById('g6MeaningBox').innerText = item.meaning;
+    const grid = document.getElementById('g6OptionsGrid'); grid.innerHTML = '';
+    const opts = [item.word, 'goldfish', 'dolphin', 'shark'].sort(() => Math.random() - 0.5);
+    opts.forEach(o => {
+      grid.innerHTML += `<button class="option-btn en" onclick="handleGameAns('${o}'==='${item.word}')">${o}</button>`;
     });
+  }
 }
 
-function initGame10(){
-    const qData = [
-        {q: "Sasha's favourite snack is ____.", o: ["unniyappam", "dosa"], a: 0},
-        {q: "Kabitha's clothes were ____.", o: ["new", "torn"], a: 1},
-        {q: "Rinku put the bird in his ____.", o: ["pocket", "bag"], a: 0},
-        {q: "Sharing is ____.", o: ["boring", "caring"], a: 1}
-    ];
-    const item = qData[Math.floor(Math.random()*qData.length)];
-    document.getElementById('g10SentBox').innerText = item.q;
-    const opts = document.getElementById('g10OptionsGrid');
-    opts.innerHTML = '';
-    item.o.forEach((opt, idx) => {
-        const b = document.createElement('button');
-        b.className = 'option-btn';
-        b.innerText = opt;
-        b.onclick = () => {
-            if(idx === item.a){
-                b.classList.add('correct');
-                playSound('correct');
-                setTimeout(()=> {showRewardModal(); initGame10();}, 1500);
-            } else {
-                b.classList.add('wrong');
-                playSound('wrong');
-                setTimeout(()=>b.classList.remove('wrong'), 800);
-            }
-        };
-        opts.appendChild(b);
-    });
+function handleGameAns(ok) {
+  if (ok) { state.score += 10; updateStatsUI(); speakEnglish('Correct!'); }
+  else { state.lives--; updateStatsUI(); speakEnglish('Try again'); }
+  state.currentGameIndex++;
+  if (state.currentGameIndex < 3 && state.lives > 0) renderCurrentGame();
+  else showScreen('homeScreen');
 }
 
-window.onload=function(){
-    updateStatsUI();
-    if('speechSynthesis'in window){
-        window.speechSynthesis.getVoices();
-        window.speechSynthesis.onvoiceschanged=pickVoice
-    }
-};
+function renderQuiz() {
+  state.quizSubmitted = false;
+  const c = document.getElementById('quizContainer'); c.innerHTML = '';
+  QUIZ.forEach((q, qi) => {
+    c.innerHTML += `<div class="qp-q"><div class="en" style="font-weight:800; margin-bottom:8px;">${qi + 1}. ${q.q}</div><div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;" id="qopt${qi}">${q.opts.map((o, oi) => `<button class="option-btn en" style="font-size:1rem; padding:8px;" onclick="pickQ(${qi}, ${oi})">${o}</button>`).join('')}</div></div>`;
+  });
+}
 
+let userPicks = {};
+function pickQ(qi, oi) {
+  userPicks[qi] = oi;
+  const btns = document.querySelectorAll(`#qopt${qi} button`);
+  btns.forEach((b, i) => b.style.background = i === oi ? '#BAE6FD' : '#FFF');
+}
+
+function submitQuiz() {
+  let sc = 0;
+  QUIZ.forEach((q, qi) => { if (userPicks[qi] === q.ans) sc++; });
+  const box = document.getElementById('quizScoreBox');
+  box.style.display = 'block';
+  box.innerText = `Score: ${sc} / ${QUIZ.length}`;
+  state.score += sc * 10; updateStatsUI();
+}
+
+window.onload = function() { updateStatsUI(); };
 </script>
 </body>
 </html>
